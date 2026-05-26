@@ -1,0 +1,18 @@
+@reference "tailwindcss";
+
+.toast {
+  @apply fixed bottom-6 left-1/2 -translate-x-1/2 rounded-lg px-6 py-3 text-sm font-medium text-white shadow-lg;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.success {
+  @apply bg-green-500;
+}
+
+.error {
+  @apply bg-red-500;
+}
+
+.hidden {
+  @apply opacity-0 pointer-events-none;
+}

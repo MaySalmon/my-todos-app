@@ -1,4 +1,4 @@
-import { getTodos, seedTodosIfEmpty } from "@/lib/todos";
+import { getTodos } from "@/lib/todos";
 
 export const GET = async () => {
   const todos = await getTodos();

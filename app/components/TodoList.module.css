@@ -1,0 +1,41 @@
+@reference "tailwindcss";
+
+.header {
+  @apply mb-2 text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50;
+}
+
+.count {
+  @apply mb-8 text-sm text-zinc-500;
+}
+
+.status {
+  @apply text-sm text-zinc-500;
+}
+
+.list {
+  @apply flex flex-col gap-2;
+}
+
+.item {
+  @apply flex items-center gap-3 rounded-lg border border-zinc-200 bg-white px-4 py-3 shadow-sm dark:border-zinc-700 dark:bg-zinc-900;
+}
+
+.dot {
+  @apply h-4 w-4 shrink-0 rounded-full border-2 border-zinc-400;
+}
+
+.dotDone {
+  @apply border-green-500 bg-green-500;
+}
+
+.label {
+  @apply flex-1 text-sm text-zinc-800 dark:text-zinc-100;
+}
+
+.labelDone {
+  @apply line-through text-zinc-400;
+}
+
+.badge {
+  @apply text-xs text-zinc-400;
+}

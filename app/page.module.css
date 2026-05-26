@@ -1,0 +1,9 @@
+@reference "tailwindcss";
+
+.container {
+  @apply flex min-h-screen flex-col items-center justify-start bg-zinc-50 px-4 py-16 dark:bg-zinc-950;
+}
+
+.main {
+  @apply w-full max-w-xl;
+}

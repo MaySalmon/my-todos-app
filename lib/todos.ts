@@ -1,12 +1,6 @@
 import clientPromise from "./mongodb";
 import { ObjectId } from "mongodb";
-
-export type Todo = {
-  _id: string;
-  title: string;
-  completed: boolean;
-  createdAt: string;
-};
+import type { Todo } from "@/types/todo";
 
 type TodoDoc = {
   _id: ObjectId;
