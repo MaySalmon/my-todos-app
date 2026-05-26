@@ -1,0 +1,45 @@
+@reference "tailwindcss";
+
+.form {
+  @apply flex flex-col gap-5;
+}
+
+.field {
+  @apply flex flex-col gap-1;
+}
+
+.label {
+  @apply text-sm font-medium text-zinc-700 dark:text-zinc-300;
+}
+
+.input {
+  @apply rounded-lg border border-zinc-300 px-3 py-2 text-sm text-zinc-900 outline-none focus:border-zinc-500 dark:border-zinc-600 dark:bg-zinc-800 dark:text-zinc-100;
+}
+
+.error {
+  @apply text-xs text-red-500;
+}
+
+.checkboxField {
+  @apply flex items-center gap-2;
+}
+
+.checkbox {
+  @apply h-4 w-4 accent-zinc-800;
+}
+
+.checkboxLabel {
+  @apply text-sm text-zinc-700 dark:text-zinc-300;
+}
+
+.actions {
+  @apply flex justify-end gap-3 pt-2;
+}
+
+.cancelBtn {
+  @apply rounded-lg border border-zinc-300 px-4 py-2 text-sm font-medium text-zinc-700 transition-colors hover:bg-zinc-50 dark:border-zinc-600 dark:text-zinc-300 dark:hover:bg-zinc-800;
+}
+
+.submitBtn {
+  @apply rounded-lg bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-700 disabled:opacity-50 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200;
+}

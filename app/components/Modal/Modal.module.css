@@ -1,0 +1,25 @@
+@reference "tailwindcss";
+
+.overlay {
+  @apply fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4;
+}
+
+.modal {
+  @apply w-full max-w-md rounded-xl bg-white shadow-xl dark:bg-zinc-900;
+}
+
+.header {
+  @apply flex items-center justify-between border-b border-zinc-200 px-6 py-4 dark:border-zinc-700;
+}
+
+.title {
+  @apply text-lg font-semibold text-zinc-900 dark:text-zinc-50;
+}
+
+.closeBtn {
+  @apply text-xl leading-none text-zinc-400 transition-colors hover:text-zinc-600 dark:hover:text-zinc-200;
+}
+
+.body {
+  @apply px-6 py-5;
+}

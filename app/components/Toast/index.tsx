@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "@/store";
 import { hideToast } from "@/store/slices/toastSlice";
+import type { ToastType } from "@/store/slices/toastSlice";
 import styles from "./Toast.module.css";
 
 const Toast = () => {
@@ -11,12 +12,17 @@ const Toast = () => {
 
   useEffect(() => {
     if (!visible) return;
-    const timer = setTimeout(() => dispatch(hideToast()), 3000);
+    const timer: ReturnType<typeof setTimeout> = setTimeout(
+      () => dispatch(hideToast()),
+      3000
+    );
     return () => clearTimeout(timer);
   }, [visible, dispatch]);
 
+  const typeClass: ToastType = type;
+
   return (
-    <div className={`${styles.toast} ${styles[type]} ${!visible ? styles.hidden : ""}`}>
+    <div className={`${styles.toast} ${styles[typeClass]} ${!visible ? styles.hidden : ""}`}>
       {message}
     </div>
   );

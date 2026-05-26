@@ -1,11 +1,19 @@
 @reference "tailwindcss";
 
 .header {
-  @apply mb-2 text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50;
+  @apply mb-4 text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50;
+}
+
+.topBar {
+  @apply mb-6 flex items-center justify-between;
 }
 
 .count {
-  @apply mb-8 text-sm text-zinc-500;
+  @apply text-sm text-zinc-500;
+}
+
+.addBtn {
+  @apply rounded-lg bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-700 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200;
 }
 
 .status {

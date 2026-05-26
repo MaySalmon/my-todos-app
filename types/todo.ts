@@ -4,3 +4,8 @@ export type Todo = {
   completed: boolean;
   createdAt: string;
 };
+
+export type CreateTodoInput = {
+  title: string;
+  completed: boolean;
+};
